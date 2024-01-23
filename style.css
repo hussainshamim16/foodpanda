@@ -1,0 +1,581 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100%;
+    
+}
+
+/* ---       color s */
+
+.light-bg{
+    background-color: rgb(149, 119, 255);
+}
+.dark-bg{
+    background-color: rgb(27, 0, 124);
+}
+
+.light-tc{
+    color: rgb(196, 180, 255);
+}
+
+.dark-tc{
+        color: rgb(10, 0, 49);   
+
+}
+
+/* ----------------------- flex  */
+
+.flexR{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.flexC{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* -------------------------- start--- */
+
+
+body{
+justify-self: start;    
+}
+
+header{
+    width: 100%;
+    height: 18vh;
+    position: fixed;
+    z-index: 40;
+    box-shadow: 1px 6px 10px 2px #00000057;
+
+    
+}
+nav{
+    
+padding-top: 50px;
+}
+ul{
+    color: white;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration : none;
+    font-weight: 700;
+    font-size: 120%;
+    color: rgb(196, 180, 255);
+}
+
+/* section 01 */
+
+section.one{
+    padding-top: 100px;
+    /* border: 2px solid rgb(255, 174, 0); */
+    width: 100%;
+    height: 75vh;
+}
+section.one .firstText{
+    /* border: 1px solid red; */
+    width: 60%;    
+}
+.firstText p{
+   font-size: 160%;
+   font-weight: 500;
+}
+p.left{
+    text-align: start;
+}
+p.right{
+    text-align: end;
+    width: 430px;
+}
+.firstText h1{
+   font-size: 630%;
+   font-weight: 900;
+}
+
+.firstImage img{
+    width: 300px;
+}
+
+section.two{
+    width: 100%;
+    height: 150vh;
+
+    /* border: 1px solid black; */
+
+    margin-top: 20px;
+}
+
+section.two .boxes{
+    /* border: 2px solid green; */
+    width: 100% ;
+    
+justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+section.two .boxes .box{
+    width: 45%;
+   margin-bottom: 20px;
+    height: 60vh;
+    border: 2px solid rgb(27, 0, 124);
+    border-radius: 20px;
+    box-shadow: 16px 12px 10px 2px #0000004b;
+    text-align: center;
+}
+section.two .boxes .box1{
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgb(63, 12, 245)),url('./img/mutton\ beryani.jpg');
+
+ background-repeat: no-repeat;
+ position: relative;
+ background-size: cover;
+}
+section.two .boxes .box2{
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgb(63, 12, 245)),url('./img/chiken\ macaroni.jpg');
+
+ background-repeat: no-repeat;
+ position: relative;
+ background-size: cover;
+}
+section.two .boxes .box3{
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgb(63, 12, 245)),url('./img/pizza\ 1.jpg');
+
+ background-repeat: no-repeat;
+ position: relative;
+ background-size: cover;
+}
+section.two .boxes .box4{
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgb(63, 12, 245)),url('./img/chocolate\ cake.jpg');
+
+ background-repeat: no-repeat;
+ position: relative;
+ background-size: cover;
+}
+section.two .boxes .box h1{
+    margin-top: 220px;
+    font-size: 140%;
+}
+section.two .boxes .box p{
+  margin-bottom: 20px;
+    font-size: 84%;
+    /* border: 2px solid red; */
+    padding: auto;
+}
+section.two .boxes .box a{
+  
+    text-decoration: none;
+    color: rgb(149, 119, 255);
+    font-weight: 700;
+    background-color: rgb(27, 0, 124);
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+
+section.three{
+    width: 100%;
+    height: 80vh;
+
+    /* border: 4px solid rgb(107, 0, 0); */
+
+    margin-top: 20px;
+}
+
+section.three .swiperText{
+    /* margin-top: 5%; */
+    /* border: 1px solid green; */
+    width: 50%;
+}
+section.three .swiperText h1{
+    color: rgb(10, 0, 49);   
+    font-size: 330%;
+}
+section.three .swiperText p{
+    color: rgb(10, 0, 49);   
+    /* font-size: 0%; */
+}
+
+/* ------------- .swiperText */
+.swiper {
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .swiper-slide {
+    border-radius: 20px;
+    /* border: 2px solid rgb(0, 17, 255); */
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(174, 152, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide h1{
+      margin-top: 10%;
+      font-size: 127%;
+  color: rgb(10, 0, 49);   
+  text-transform: uppercase;
+  }
+  .swiper-slide p{
+      margin-top: 10px;
+      font-size: 87%;
+      padding: 0px 90px;
+      text-align: center;
+  color: rgb(10, 0, 49);   
+  text-transform: capitalize;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  section.four{
+    width: 100%;
+    height: 220vh;
+
+    /* border: 3px solid rgb(0, 26, 175); */
+
+    margin-top: 20px;
+  }
+  section.four .sarch{
+
+    margin-top: 20px;
+    /* border: 1px solid rgb(8, 8, 8); */
+  }
+  section.four button{
+    background-color: rgb(27, 0, 124);
+ padding: 10px 20px;
+ border: none;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.616);
+  }
+  section.four .sarch input::placeholder{color: rgb(255, 255, 255);}
+  section.four .sarch input{
+justify-content: space-between;
+background-color: rgb(27, 0, 124);
+
+color: white;
+
+    width: 90%;
+    height: 7vh;
+
+    border: none;
+    border-radius: 15px;
+
+    padding-left: 20px;
+  }
+
+  section.four .boxes{
+
+    margin-top: 20px;
+    /* border: 1px solid rgb(8, 8, 8); */
+
+    flex-wrap: wrap;
+  }
+  section.four .boxes .box{
+
+    margin-top: 20px;
+    /* border: 1px solid rgb(192, 12, 12); */
+    width: 30%;
+    height: 30vh;
+    border-radius: 10px;
+  }
+
+  section.four .boxes .box img{
+opacity: 0.9;
+
+    /* margin-top: 20px; */
+    /* border: 4px solid rgb(192, 12, 12); */
+    box-shadow: 20px 15px 10px #00000048;
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transition-delay: 0.2s;
+  }
+
+  section.four .boxes .box a{
+display: inline;
+position: absolute;
+z-index: 4;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transition-delay: 0.2s;
+
+    text-decoration: none;
+    color: rgb(149, 119, 255);
+    font-weight: 700;
+    background-color: rgb(27, 0, 124);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 90%;
+
+    /* display: none; */
+  }
+  section.four .boxes .box img:hover{
+opacity: 0.6;
+
+  
+    box-shadow: 20px 15px 10px #00000048;
+    width: 100%;
+    /* height: 30vh; */
+    border-radius: 10px;
+  }
+
+  footer{
+    width: 100%;
+    height: 40vh;
+
+/* padding: 40px; */
+
+justify-content: space-evenly;
+    background-color: rgb(27, 0, 124);
+  }
+  footer .text{
+   line-height: 40px;
+   /* border: 1px solid red; */
+   width: 200px;
+  }
+  footer .text h2{
+    font-size: 140%;
+    color: rgb(149, 119, 255);
+  }
+  footer .text p{
+    color: rgb(196, 180, 255);
+    width: 300px;
+  }
+
+  footer .text li{
+    color: rgb(196, 180, 255);
+    font-size: 80%;
+  }
+
+  section.extra{
+    display: none; 
+position: fixed;
+
+    width: 100%;
+    height: 100vh;
+z-index: 6;
+    background-color: rgba(0, 0, 0, 0.671);
+
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 2s;
+    transition-delay: 2s;
+  }
+  section.extra .box{
+    
+    width: 40%;
+    height: 90vh;
+
+    border-radius: 20px;
+/* text-align: left; */
+    padding: 20px;
+    background-color: rgb(149, 119, 255);
+  }
+  section.extra .box h2{
+    color: rgb(27, 0, 124);
+font-size: 300%;  
+
+
+  }
+  section.extra .box h3{
+    color: rgb(9, 1, 41);
+font-size: 200%;  
+  }
+  section.extra .box h4{
+    color: rgb(9, 1, 41);
+font-size: 100%;  
+text-align: center;
+margin-top: 20px;
+  }
+  section.extra .box p{
+    color: rgb(9, 1, 41);
+font-size: 100%;  
+text-align: center;
+margin-top: 20px;
+margin-bottom: 30px;
+  }
+  section.extra .box a{
+    text-decoration: none;
+    color: rgb(149, 119, 255);
+    font-weight: 700;
+    background-color: rgb(27, 0, 124);
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-align: center;
+
+    
+  }
+
+  /* ---- mobile---- */
+
+  @media (max-width:500px) {
+*{
+    font-size: 96%;
+}
+
+    section.one{
+        padding-top: 100px;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    section.one .firstText{
+        margin-top: -20px;
+        /* border: 1px solid red; */
+        width: 100%;  
+        text-align: center;  
+    }
+    section.one .firstText h1{
+        font-size: 420%;        
+    }
+
+    p.right{
+        text-align: center;
+        width: 100%;
+    }
+    p.left{
+        text-align: center;
+        /* width: 300px; */
+    }
+
+    section.two{
+        
+        height: 80vh;
+    
+    }
+
+    section.two .boxes .box{
+        width: 45%;
+       margin-bottom: 20px;
+        height: 30vh;
+        border: 2px solid rgb(27, 0, 124);
+        border-radius: 20px;
+        box-shadow: 16px 12px 10px 2px #0000004b;
+        text-align: center;
+    }
+
+    section.two .boxes .box h1{
+        margin-top: 20%;
+        font-size: 130%;
+    }
+    section.two .boxes .box p{
+      margin-bottom: 20px;
+        font-size: 70%;
+    }
+    section.two .boxes .box a{
+      font-size: 90%;
+        text-decoration: none;
+        color: rgb(149, 119, 255);
+        font-weight: 700;
+        background-color: rgb(27, 0, 124);
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    section.three .swiperText{
+       
+        /* border: 1px solid green; */
+        width: 70%;
+    }
+
+    .swiper {
+        /* border: 2px solid red; */
+        border-radius: 20px;
+        width: 90%;
+        height: 50%;
+      }
+
+    section.four{
+        height: 165vh;  
+    }
+
+    
+  .swiper-slide h1{
+    margin-top: 10%;
+    font-size: 127%;
+color: rgb(10, 0, 49);   
+text-transform: uppercase;
+}
+.swiper-slide p{
+    
+    margin-top: 10px;
+    font-size: 57%;
+    padding: 0px 40px;
+    text-align: center;
+color: rgb(10, 0, 49);   
+text-transform: capitalize;
+}
+
+
+    section.four .sarch input{
+        width: 60%;
+    }
+
+    section.four .boxes .box{
+
+        margin-top: 20px;
+        /* border: 1px solid rgb(192, 12, 12); */
+        width: 30%;
+        height: 20vh;
+        border-radius: 10px;
+      }
+      section.four .boxes .box img{
+        opacity: 0.9;
+        
+            /* margin-top: 20px; */
+            /* border: 4px solid rgb(192, 12, 12); */
+            box-shadow: 20px 15px 10px #00000048;
+            width: 100%;
+            height: 16vh;
+            border-radius: 10px;
+          } 
+          footer .text{
+            line-height: 30px;
+            
+            width: 100px;
+           }
+           footer .text p{
+            color: rgb(196, 180, 255);
+            width: 300px;
+            font-size: 75%;
+          }
+          section.four .boxes .box a{
+            font-size: 80%;
+            padding: 7px 10px;
+          }
+
+          section.extra{
+           height: 120vh;
+          }
+          section.extra .box{
+            width: 90%;
+          }
+          section.extra .box p{
+         font-size: 70%;
+          }
+         
+  }
+
+
+
+ 
